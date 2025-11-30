@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Strada Lab — Web & Branding</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">Strada <span>Lab</span></div>
+    <div class="menu-toggle">&#9776;</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#packages">Paquetes</a></li>
+        <li><a href="#portfolio">Portafolio</a></li>
+        <li><a href="#testimonials">Testimonios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>Strada <span>Lab</span></h1>
+      <p>Web & Branding — Diseño que rompe esquemas</p>
+      <a href="#packages" class="btn-hero">Ver Paquetes</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Servicios</h2>
+    <div class="cards services-cards">
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Branding & Logo</h3>
+        <p>Identidades visuales únicas y memorables.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💻</div>
+        <h3>Desarrollo Web</h3>
+        <p>Sitios responsivos, modernos, con UX profesional.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Social & Contenido</h3>
+        <p>Imagen de marca coherente + redes + marketing visual.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🛍️</div>
+        <h3>Ecommerce / Tienda Online</h3>
+        <p>Ventas online con estilo y experiencia premium.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="packages" class="packages">
+    <h2>Paquetes</h2>
+    <div class="cards package-cards">
+      <div class="package-card">
+        <h3>Básico</h3>
+        <ul>
+          <li>Logo + Identidad básica</li>
+          <li>Presencia en redes</li>
+        </ul>
+        <a href="#contact" class="btn-cta">Solicitar Ahora</a>
+      </div>
+      <div class="package-card">
+        <h3>Intermedio</h3>
+        <ul>
+          <li>Logo + Branding completo</li>
+          <li>Landing Page / Web sencilla</li>
+        </ul>
+        <a href="#contact" class="btn-cta">Solicitar Ahora</a>
+      </div>
+      <div class="package-card">
+        <h3>Premium</h3>
+        <ul>
+          <li>Branding completo</li>
+          <li>Web completa + Ecommerce</li>
+          <li>Soporte & mantenimiento</li>
+        </ul>
+        <a href="#contact" class="btn-cta">Solicitar Ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Portafolio</h2>
+    <div class="cards portfolio-grid">
+      <div class="portfolio-item" onclick="openModal(this)">
+        <img src="Captura de pantalla (4).png" alt="Pagina Web">
+        <h3>Pagina Web</h3>
+      </div>
+      <div class="portfolio-item" onclick="openModal(this)">
+        <img src="file_00000000d96861f8ba937ccf363987e2.png" alt="Creación de Logo">
+        <h3>Creación de Logo</h3>
+      </div>
+      <div class="portfolio-item" onclick="openModal(this)">
+        <img src="mono.png" alt="Proyecto 3">
+        <h3>Creación de Logo</h3>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <section id="testimonials" class="testimonials">
+    <h2>Testimonios</h2>
+    <div class="testimonial-carousel">
+      <div class="testimonial">
+        <p>"Strada Lab llevó nuestra marca a otro nivel."</p>
+        <h4>- Cliente A</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Profesionalismo, diseño moderno y resultados reales."</p>
+        <h4>- Cliente B</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Diseño impresionante y experiencia de usuario top."</p>
+        <h4>- Cliente C</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <section id="contacto">
+  <h2>Contacto</h2>
+ 
+  
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+    <button type="submit" class="btn-cta">Enviar por WhatsApp</button>
+  </form>
+</section>
+
+
+
+  <footer class="footer">
+    <p>&copy; 2025 Strada Lab. Todos los derechos reservados.</p>
+    <div class="footer-socials">
+      <a href="#">🌐</a>
+      <a href="#">🐦</a>
+      <a href="#">📸</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
